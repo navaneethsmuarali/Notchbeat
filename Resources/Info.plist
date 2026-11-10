@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Notchbeat</string>
+	<key>CFBundleExecutable</key>
+	<string>Notchbeat</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ramnethaji.notchbeat</string>
+	<key>CFBundleName</key>
+	<string>Notchbeat</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.music</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Notchbeat reads what is playing in YouTube Music in Chrome and sends play, pause and skip commands to it. It also saves your quick notes to Apple Notes when you ask.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Notchbeat shows your upcoming events and meeting Join buttons in the island.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Notchbeat shows your upcoming events and meeting Join buttons in the island.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

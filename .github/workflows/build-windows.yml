@@ -1,0 +1,39 @@
+name: Build Windows Exe
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore windows/Notchbeat/Notchbeat.csproj
+
+    - name: Build & Publish Single-File Exe
+      run: >
+        dotnet publish windows/Notchbeat/Notchbeat.csproj
+        -c Release
+        -r win-x64
+        --self-contained true
+        -p:PublishSingleFile=true
+        -o build/windows
+
+    - name: Upload Notchbeat.exe Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Notchbeat-Windows-x64
+        path: build/windows/Notchbeat.exe
+

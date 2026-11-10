@@ -1,0 +1,46 @@
+<UserControl x:Class="Notchbeat.Views.FilesTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             d:DesignHeight="220" d:DesignWidth="400"
+             Foreground="White">
+    <Grid Margin="16,8,16,12" AllowDrop="True" Drop="Grid_Drop">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding Shelf.Items}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="74" Margin="0,0,8,0" Background="#14FFFFFF" CornerRadius="8" Padding="6">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Image Source="{Binding Thumbnail}" Width="40" Height="40" Stretch="Uniform"/>
+                                <TextBlock Text="{Binding FileName}" FontSize="10" Foreground="#D9FFFFFF" MaxHeight="28" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" TextAlignment="Center" Margin="0,4,0,0"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Drop hint when empty -->
+        <TextBlock Text="Drag and drop files here to park them on the island"
+                   FontSize="12" Foreground="#59FFFFFF"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Visibility="{Binding Shelf.Items.Count, Converter={StaticResource InverseBoolToVisibility}}"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Clear All" Click="Clear_Click" Style="{StaticResource SmallButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+
