@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/icon.png" width="112" alt="Notchbeat icon" />
+<img src="docs/assets/Her.png" width="112" alt="Notchbeat icon" />
 
 # Notchbeat
 
