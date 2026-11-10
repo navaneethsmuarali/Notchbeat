@@ -58,7 +58,7 @@ public sealed class ScreenRecorder : ObservableObject
             StartedAt = DateTime.UtcNow;
             IsRecording = true;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             LastError = "FFmpeg not detected in PATH. Install ffmpeg to enable screen recording.";
             IsRecording = false;

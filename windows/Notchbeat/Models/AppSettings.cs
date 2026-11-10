@@ -15,9 +15,14 @@ public sealed class AppSettings
         Path.Combine(SettingsDir, "settings.json");
 
     public bool LaunchAtLogin { get; set; }
+    public bool ClipboardEnabled { get; set; } = true;
     public bool ClipboardHistoryEnabled { get; set; } = true;
     public bool FloatingPlayerEnabled { get; set; }
     public bool ScreenRecordingEnabled { get; set; }
+    public bool DeviceAlerts { get; set; } = true;
+    public bool AgentsEnabled { get; set; } = true;
+    public bool AgentSound { get; set; } = true;
+    public bool ShowBubbles { get; set; } = true;
     public double IslandX { get; set; } = double.NaN;
     public double IslandY { get; set; } = double.NaN;
 
