@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b14"/>
+      <stop offset="0.55" stop-color="#140c22"/>
+      <stop offset="1" stop-color="#05050a"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.3" r="0.55">
+      <stop offset="0" stop-color="#ff2d55" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff2d55" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.15" cy="0.95" r="0.5">
+      <stop offset="0" stop-color="#5e5ce6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5e5ce6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="0.9" cy="0.85" r="0.45">
+      <stop offset="0" stop-color="#30d158" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#30d158" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="art" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff375f"/>
+      <stop offset="0.5" stop-color="#bf5af2"/>
+      <stop offset="1" stop-color="#5e5ce6"/>
+    </linearGradient>
+    <linearGradient id="prog" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff375f"/>
+      <stop offset="1" stop-color="#bf5af2"/>
+    </linearGradient>
+    <linearGradient id="island" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#111114"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c9c3ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glowA)"/>
+  <rect width="1280" height="640" fill="url(#glowB)"/>
+  <rect width="1280" height="640" fill="url(#glowC)"/>
+
+  <!-- menu bar -->
+  <rect width="1280" height="30" fill="#ffffff" fill-opacity="0.04"/>
+  
+  <text x="24" y="20" font-size="13" fill="#fff" fill-opacity="0.6">Finder   File   Edit   View   Go   Window   Help</text>
+  <text x="1256" y="20" font-size="13" fill="#fff" fill-opacity="0.6" text-anchor="end">♪   ◐ 86%   Tue 10 Nov  9:41</text>
+
+  <!-- island glow -->
+  <rect x="360" y="40" width="560" height="250" rx="44" fill="#ff375f" fill-opacity="0.25" filter="url(#soft)"/>
+
+  <!-- expanded island -->
+  <g filter="url(#shadow)">
+    <rect x="340" y="22" width="600" height="268" rx="44" fill="url(#island)" stroke="#ffffff" stroke-opacity="0.08"/>
+  </g>
+
+  <!-- tabs -->
+  <g font-size="12" font-weight="600" text-anchor="middle">
+    <rect x="372" y="44" width="72" height="26" rx="13" fill="#fff" fill-opacity="0.14"/>
+    <text x="408" y="61" fill="#fff">Music</text>
+    <text x="482" y="61" fill="#fff" fill-opacity="0.45">Files</text>
+    <text x="552" y="61" fill="#fff" fill-opacity="0.45">Clipboard</text>
+    <text x="630" y="61" fill="#fff" fill-opacity="0.45">Calendar</text>
+    <text x="700" y="61" fill="#fff" fill-opacity="0.45">System</text>
+    <text x="760" y="61" fill="#fff" fill-opacity="0.45">Notes</text>
+    <text x="820" y="61" fill="#fff" fill-opacity="0.45">Agents</text>
+  </g>
+  <circle cx="906" cy="57" r="11" fill="#fff" fill-opacity="0.08"/>
+  <text x="906" y="62" font-size="13" fill="#fff" fill-opacity="0.6" text-anchor="middle">⚙</text>
+
+  <!-- artwork -->
+  <rect x="372" y="90" width="104" height="104" rx="18" fill="url(#art)"/>
+  <circle cx="424" cy="142" r="30" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="424" cy="142" r="6" fill="#fff" fill-opacity="0.7"/>
+
+  <!-- track info -->
+  <text x="498" y="122" font-size="22" font-weight="700" fill="#fff">Midnight Drive</text>
+  <text x="498" y="148" font-size="15" fill="#fff" fill-opacity="0.55">Neon Coast · YouTube Music</text>
+
+  <!-- equalizer -->
+  <g fill="#ff375f">
+    <rect x="884" y="108" width="5" height="22" rx="2.5"/>
+    <rect x="893" y="100" width="5" height="30" rx="2.5"/>
+    <rect x="902" y="114" width="5" height="16" rx="2.5"/>
+    <rect x="911" y="104" width="5" height="26" rx="2.5"/>
+  </g>
+
+  <!-- progress -->
+  <rect x="498" y="172" width="410" height="5" rx="2.5" fill="#fff" fill-opacity="0.15"/>
+  <rect x="498" y="172" width="250" height="5" rx="2.5" fill="url(#prog)"/>
+  <circle cx="748" cy="174.5" r="7" fill="#fff"/>
+  <text x="498" y="198" font-size="11" fill="#fff" fill-opacity="0.45">2:18</text>
+  <text x="908" y="198" font-size="11" fill="#fff" fill-opacity="0.45" text-anchor="end">3:46</text>
+
+  <!-- controls -->
+  <g fill="#fff">
+    <path d="M610 224 l-16 10 l16 10z M594 224 h-4 v20 h4z" fill-opacity="0.85"/>
+    <circle cx="654" cy="234" r="22" fill="#fff"/>
+    <rect x="646" y="224" width="5" height="20" rx="1.5" fill="#000"/>
+    <rect x="657" y="224" width="5" height="20" rx="1.5" fill="#000"/>
+    <path d="M698 224 l16 10 l-16 10z M714 224 h4 v20 h-4z" fill-opacity="0.85"/>
+  </g>
+
+  <!-- app bubbles -->
+  <g>
+    <circle cx="380" cy="262" r="0" fill="none"/>
+    <circle cx="774" cy="234" r="14" fill="#0a84ff"/>
+    <circle cx="808" cy="234" r="14" fill="#30d158"/>
+    <circle cx="842" cy="234" r="14" fill="#ff9f0a"/>
+    <circle cx="876" cy="234" r="14" fill="#bf5af2"/>
+    <circle cx="904" cy="226" r="7" fill="#ff375f"/>
+    <text x="904" y="229.5" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+  </g>
+  <text x="372" y="240" font-size="12" fill="#fff" fill-opacity="0.45">♥  Up Next  ⧉</text>
+
+  <!-- headline -->
+  <text x="640" y="400" font-size="64" font-weight="800" fill="url(#title)" text-anchor="middle" letter-spacing="-1.5">Notchbeat</text>
+  <text x="640" y="446" font-size="24" fill="#fff" fill-opacity="0.72" text-anchor="middle">A Dynamic Island for your desktop.</text>
+  <text x="640" y="480" font-size="17" fill="#fff" fill-opacity="0.45" text-anchor="middle">Music · Clipboard · Calendar · System stats · File shelf · AI agent alerts</text>
+
+  <!-- platform chips -->
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <rect x="510" y="524" width="120" height="40" rx="20" fill="#fff" fill-opacity="0.08" stroke="#fff" stroke-opacity="0.15"/>
+    <text x="570" y="549" fill="#fff">macOS</text>
+    <rect x="650" y="524" width="120" height="40" rx="20" fill="#fff" fill-opacity="0.08" stroke="#fff" stroke-opacity="0.15"/>
+    <text x="710" y="549" fill="#fff">⊞ Windows</text>
+  </g>
+</svg>
