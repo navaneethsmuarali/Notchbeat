@@ -15,7 +15,7 @@ Your music, meetings, clipboard and system stats in one pill at the top of your 
 
 <br/>
 
-<img src="docs/assets/hero.svg" alt="Notchbeat expanded island showing the Music tab" width="100%" />
+<img src="docs/assets/Her.png" alt="Notchbeat expanded island showing the Music tab" width="100%" />
 
 </div>
 
